@@ -204,8 +204,8 @@ class Game {
             const centerOfRoundX = Math.floor(x) + startX;
             const centerOfRoundY = Math.floor(y) + startY;
 
-            const clickX = event.clientX;
-            const clickY = event.clientY;
+            const clickX = event.pageX;
+            const clickY = event.pageY;
 
             const pointDistance = Math.sqrt(
                 (clickX - centerOfRoundX) ** 2 + (clickY - centerOfRoundY) ** 2
