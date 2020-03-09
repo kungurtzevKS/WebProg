@@ -19,7 +19,7 @@
     <canvas id="balloonCanvas" width="1200" height="800" >
     </canvas>
   </div> 
-<div class="modal-background">
+<div class="modal-background" id="resultModal">
     <div class="modal-window">
         <div><p class="h-text">ИГРА ПРОЙДЕНА</p></div>
         <hr>
@@ -27,22 +27,20 @@
         <div><p id="moves">Счет: </p></div>
     </div>  
 </div>
-<div class="modal-background">
+<div class="modal-background" id="optionsModal">
     <div class="modal-window">
         <div><p class="h-text">НАСТРОЙКИ</p></div>
         <hr>
         <div>
             <div><p class="h-text">Сложность</p></div>
             <br>
-            <p><input checked id=“normal” name="difficulty" type="radio" onclick="animationDuration = 1000"><label for=“normal”>Нормальная</label></p>
-            <p><input id=“advanced” name="difficulty" type="radio" onclick="animationDuration = 500"><label for=“advanced”>Повышенная</label></p>
-            <p><input id=“hard” name="difficulty" type="radio" onclick="animationDuration = 250"><label for=“hard”>Хардкор</label></p>
+            <p><input data-difficulty = "1100" checked id="normal" name="difficulty" type="radio" onclick="animationDuration = 1000"><label for="normal">Нормальная</label></p>
+            <p><input data-difficulty = "700" id="advanced" name="difficulty" type="radio" onclick="animationDuration = 500"><label for="advanced">Повышенная</label></p>
+            <p><input data-difficulty = "300" id="hard" name="difficulty" type="radio" onclick="animationDuration = 250"><label for="hard">Хардкор</label></p>
         </div>
     </div>
 </div>
 
-
-<script src="scripts/script2.js" defer></script>
-<script src="scripts/script.js" async></script>
+<script src="scripts/script.js" defer></script>
 </body>
 </html>
