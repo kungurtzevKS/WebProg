@@ -1,2 +1,2 @@
-# Pair-cards
- Pair cards (concentration) game using JS
+# Kungurtzevks.gihub.io
+Kungurtzevks.github.io
