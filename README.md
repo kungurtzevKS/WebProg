@@ -1,2 +1,2 @@
-# Kungurtzevks.gihub.io
+# Kungurtzevks.github.io
 Kungurtzevks.github.io
