@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'PressStart2P';
+    src: url("../fonts/PressStart2P.ttf");
+}
+
+body {
+    background-image: url("../pic/fon.jpg");
+    background-size: 100%;
+
+}
+
+header {
+    background-color: re;
+    margin: 15px 300px 50px;
+    min-width: 900px;
+    border-radius: 7px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+li {
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+    margin: auto;
+}
+
+.button_start{
+    width: 120px;
+    height: 80px;
+    margin: auto auto;
+}
+
+
+.top-btn {
+    font-family: 'PressStart2P', serif;
+    color: black;
+    margin: 25px;
+    transition: 0.5s;
+    font-size: 26pt;
+}
+
+.top-btn_white {
+    color: wheat;
+}
+
+.top-btn:hover {
+    color: rgb(240, 30, 50);
+    text-shadow: 1px 1px 2px black, 5px 5px 10px rgb(240, 30, 50);
+    transition: 0.5s;
+}
+
+.table {
+    background-image: url("../pic/table3.jpg");
+    width: 1200px;
+    height: 800px;
+    margin: auto;
+    display: grid;
+    background-size: 100%;
+    box-shadow: rgba(0, 0, 0, 0.5) 15px 15px 15px;
+}
+
+.table .is-dark {
+    background: rgba(0, 0, 0, 0.5); /* полупрозрачный цвет фона */
+    transition: 0.5s ease-in;
+}
+
+
+.modal-background {
+    width: 100%;
+    height: 100%;
+
+    text-align: center;
+    margin: 0; /* убираем отступы */
+    padding: 0; /* убираем отступы */
+
+    position: absolute; /* фиксируем положение */
+    top: 0; /* растягиваем блок по всему экрану */
+    left: 0;
+
+    opacity: 0;  /* Делаем невидимым -- 1 */
+    display: none;
+    background-color: rgba(255, 255, 255, .5);
+    transition: all .5s linear;
+
+}
+
+/* ширина диалогового окна и его отступы от экрана */
+.modal-window {
+    font-family: 'Mason Chronicles', sans-serif;
+    color: white;
+    width: 50%;
+    max-width: 500px;
+    margin: 10% auto;
+    padding: 2%;
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 7px;
+}
+
+.modal-window p {
+    font-size: 18pt;
+    padding: 0;
+    margin: 0;
+}
+
+.modal-window .h-text {
+    font-size: 26pt;
+    padding: 0;
+    margin: 0;
+}

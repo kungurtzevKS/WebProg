@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Проверка реакции</title>
+    <link href="./styles/styles.css" rel="stylesheet">
+    <link href="pic/title.svg" rel="icon" type="image/icon">
+    <!-- вариант 6 -->
+
+    <script src="./scripts/JQuery.js"></script>
+</head>
+
+<body>
+    <header>
+        <ul class="list">
+            <li><a class="top-btn" href="index.html">Новая игра</a></li>
+            <li><a class="top-btn" href="#" id="start">Старт</a></li>
+            <li><a class="top-btn" href="#" id="settings">Настройки</a></li>
+        </ul>
+    </header>
+    <div id="balloonDiv" class="table">
+        <canvas id="balloonCanvas" width="1200" height="800">
+        </canvas>
+    </div>
+    <div class="modal-background" id="resultModal">
+        <div class="modal-window">
+            <div>
+                <p class="h-text">ИГРА ПРОЙДЕНА</p>
+            </div>
+            <hr>
+            <div>
+                <p id="moves">Счет: </p>
+            </div>
+            <div><a class="top-btn top-btn_white" href="index.html">Начать новую</a></div>
+        </div>
+    </div>
+    <div class="modal-background" id="optionsModal">
+        <div class="modal-window">
+            <div>
+                <p class="h-text">НАСТРОЙКИ</p>
+            </div>
+            <hr>
+            <div>
+                <div>
+                    <p class="h-text">Сложность</p>
+                </div>
+                <br>
+                <p><input data-difficulty="1100" checked id="normal" name="difficulty" type="radio"
+                        onclick="animationDuration = 1000"><label for="normal">Нормальная</label></p>
+                <p><input data-difficulty="700" id="advanced" name="difficulty" type="radio"
+                        onclick="animationDuration = 500"><label for="advanced">Повышенная</label></p>
+                <p><input data-difficulty="300" id="hard" name="difficulty" type="radio"
+                        onclick="animationDuration = 250"><label for="hard">Хардкор</label></p>
+            </div>
+        </div>
+    </div>
+    <audio 
+        id="popal"
+        src="./songs/popal.mp3">
+    </audio>
+    <audio 
+        id="mimo"
+        src="./songs/mimo.mp3">
+    </audio>
+    <script src="scripts/script.js" defer></script>
+</body>
+
+</html>
